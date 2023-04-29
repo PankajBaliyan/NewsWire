@@ -28,15 +28,15 @@ const Home = () => {
                 {newsItem.news ?
                     newsItem.news.map((item) => {
                         return (
-                            <div key={item.id}>
+                            <div key={item._id}>
                                 <img style={{ width: '100%', height: '200px' }} src="https://picsum.photos/500" alt="article images" />
                                 <div className="author">
-                                    John deo
+                                    {item.author}
                                 </div>
                                 <div className="content">
                                     <div className="title">{item.title}</div>
                                     <div className="excerpt">{item.body}</div>
-                                    <LinkContainer to={`/news/${item.id}`}>
+                                    <LinkContainer to={`/news/${item._id}`}>
                                         <Button variant="dark" className="mt-3">Read More</Button>
                                     </LinkContainer>
                                 </div>

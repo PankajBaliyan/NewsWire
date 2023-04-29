@@ -24,7 +24,6 @@ const Contact = () => {
         }),
         onSubmit: (values, { resetForm }) => {
             // alert(JSON.stringify(values, null, 2));
-            console.log(values);
             resetForm();
         },
     });
@@ -33,10 +32,8 @@ const Contact = () => {
         emailjs.sendForm('service_2v2l7zk', 'template_jq18aqq', e.target, 'Q1oCs1Pino_G7g7Qw')
             .then((result) => {
                 // window.location.reload()  //This is if you still want the page to reload (since e.preventDefault() cancelled that behavior) 
-                // console.log(result)
                 showToast('success', 'Successfully sent the email!')
             }, (error) => {
-                console.log(error.text);
                 showToast('error', 'Something went wrong, please try again later!')
             });
     }
