@@ -1,70 +1,106 @@
-# Getting Started with Create React App
+# NewsWire-Client
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+NewsWire is a web application that allows users to create, read, update, and delete news articles. The application is built using the Model-View-Controller (MVC) architecture, and uses React for the frontend and Node.js for the backend.
 
-## Available Scripts
+<hr>
 
-In the project directory, you can run:
+💙 Join the channel to see more videos like this. [Code_With_Pankaj](https://www.youtube.com/c/CodeWithPankaj1?sub_confirmation=1)
+<hr>
 
-### `npm start`
+<div align=center>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Must visit 👇 (Click on it)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+[<img src="https://lh3.googleusercontent.com/3zkP2SYe7yYoKKe47bsNe44yTgb4Ukh__rBbwXwgkjNRe4PykGG409ozBxzxkrubV7zHKjfxq6y9ShogWtMBMPyB3jiNps91LoNH8A=s500" width="150" style="border-radius:10px">](https://www.youtube.com/c/CodeWithPankaj1?sub_confirmation=1)
 
-### `npm test`
+</div>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<hr>
 
-### `npm run build`
+# Features
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## NewsWire provides the following features:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Create news articles: Users can create new news articles by filling out a form that includes fields for the article's title, content, author, and category.
+- Read news articles: Users can view a list of all the news articles that have been created, as well as view the details of individual articles.
+- Update news articles: Users can edit the title, content, author, and category of existing news articles.
+- Delete news articles: Users can delete news articles they no longer want to keep in the system.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# Authors
 
-### `npm run eject`
+- [@PankajBaliyan](https://www.github.com/pankajbaliyan)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# Contributing
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+This project is open for contributions. If you would like to contribute to this project, you can fork the repository and submit a pull request.<br>
+Contributions are always welcome!
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+See `index.html` for ways to get started.
 
-## Learn More
+Please adhere to this project's `code of conduct`.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+# Demo
 
-### Code Splitting
+<!-- https://profile-cards-view.vercel.app -->
+Client : 
+<br><br>
+Server : https://newswire-server.onrender.com
+<!-- https://pankajbaliyan.github.io/Profile-Cards-View/ -->
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+# Feedback
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+If you have any feedback, please reach out to us at pankajbaliyan90@gmail.com
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+# 🔗 Links
 
-### Advanced Configuration
+[<img src="https://www.seekpng.com/png/detail/111-1112824_picture-my-portfolio-logo-png.png" width="150">](https://codewithpankaj.vercel.app)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+<a href="https://www.youtube.com/c/codewithpankaj1?sub_confirmation=1" target="blank"><img align="center" src="https://img.shields.io/badge/YouTube-%23FF0000.svg?style=for-the-badge&logo=YouTube&logoColor=white" alt="code with pankaj - youtube" height="40"/></a>
+<a href="https://linkedin.com/in/pankaj-kumar-90" target="blank"><img align="center" src="https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white" alt="Linkedin" height="40"/></a><br><br>
+<a href="https://leetcode.com/pankajkumar90/" target="blank"><img align="center" src="https://img.shields.io/badge/LeetCode-000000?style=for-the-badge&logo=LeetCode&logoColor=#d16c06" alt="LeetCode" height="40"/></a>
+<a href="https://auth.geeksforgeeks.org/user/im_pankaj/practice/" target="blank"><img align="center" src="https://img.shields.io/badge/GeeksforGeeks-gray?style=for-the-badge&logo=geeksforgeeks&logoColor=35914c" alt="geeksforgeeks" height="40"/></a><br><br>
+<a href="https://twitter.com/_pankaj_kumar__" target="blank"><img align="center" src="https://img.shields.io/badge/Twitter-%231DA1F2.svg?style=for-the-badge&logo=Twitter&logoColor=white" alt="Twitter" height="40"/></a>
+<a href="https://www.hackerrank.com/pankajbaliyan90" target="blank"><img align="center" src="https://img.shields.io/badge/-Hackerrank-2EC866?style=for-the-badge&logo=HackerRank&logoColor=white" alt="HackerRank" height="40"/></a>
+<a href="https://discord.gg/qYz4cYc9zP" target="blank"><img align="center" src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" height="40"/></a>
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+# Lessons Learned
 
-### `npm run build` fails to minify
+- MVC architecture can help to organize the codebase: By separating the application logic into models, views, and controllers, it becomes easier to maintain and extend the codebase. It also promotes the separation of concerns and makes the code easier to test.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- React can be a powerful tool for building user interfaces: React's component-based approach allows for reusable and modular code, which can save time and effort in the long run. React's virtual DOM also helps to optimize the rendering performance of the application.
+# Run Locally
+
+Clone the project
+
+```bash
+  git clone https://github.com/PankajBaliyan/NewsWire-Client.git
+```
+
+Go to the project directory
+
+```bash
+  cd NewsWire-Client
+```
+
+Start code editor
+
+```bash
+  code .
+  npm install
+  npm start
+```
+
+
+# Screenshots
+
+![App Screenshot](./preview.webp)
+
+
+# Support
+
+For support, email pankajbaliyan90@gmail.com or join our Slack channel.
