@@ -5,8 +5,9 @@ const getNewsItemHelper = async () => {
     // For development
     // const baseURL = 'http://localhost:3001'; // Change this to your Node.js server URL in development mode
 
-    // // For production
+    // For production
     const baseURL = 'https://newswire-server.onrender.com'; // Change this to your Node.js server URL in production mode
+
     const api = axios.create({
         baseURL: baseURL
     });
