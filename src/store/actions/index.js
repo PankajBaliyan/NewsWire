@@ -3,8 +3,8 @@ import axios from 'axios'
 const getNewsItemHelper = async () => {
     try {
         // const response = await axios.get('https://jsonplaceholder.typicode.com/posts');
-        // const response = await axios.get('/api/news');
-        const response = await axios.get('https://newswire-server.onrender.com/api/news');
+        const response = await axios.get('/api/news');
+        // const response = await axios.get('https://newswire-server.onrender.com/api/news');
         return {
             news: response.data
         }
@@ -16,8 +16,8 @@ const getNewsItemHelper = async () => {
 const getNewsItemByIdHelper = async (id) => {
     try {
         // const response = await axios.get(`https://jsonplaceholder.typicode.com/posts/${id}`);
-        // const response = await axios.get(`/api/news/${id}`);
-        const response = await axios.get(`https://newswire-server.onrender.com/api/news/${id}`);
+        const response = await axios.get(`/api/news/${id}`);
+        // const response = await axios.get(`https://newswire-server.onrender.com/api/news/${id}`);
         return {
             newsItem: response.data
         }
