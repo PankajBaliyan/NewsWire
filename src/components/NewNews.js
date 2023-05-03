@@ -47,7 +47,7 @@ const NewNews = () => {
     });
     return (
         <>
-            <form onSubmit={formik.handleSubmit}>
+            <form style={{ width: '70%', margin:'auto' }} onSubmit={formik.handleSubmit}>
                 <div className="mt-3">
                     <label htmlFor="title">Title</label>
                     <input className="form-control" id="title" type="text" placeholder="News Headline..." {...formik.getFieldProps("title")} />

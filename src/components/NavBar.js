@@ -1,32 +1,50 @@
 import React from 'react'
-import { Navbar, Nav } from 'react-bootstrap'
-import { LinkContainer } from 'react-router-bootstrap'
+// import { Navbar, Nav } from 'react-bootstrap'
+// import { LinkContainer } from 'react-router-bootstrap'
+import {
+    MDBNavbar,
+    MDBContainer,
+    MDBIcon,
+    MDBNavbarNav,
+    MDBNavbarItem,
+    MDBNavbarLink,
+    MDBNavbarToggler,
+    MDBNavbarBrand,
+    MDBCollapse
+} from 'mdb-react-ui-kit';
 
 const NavBar = () => {
     return (
         <>
-            <Navbar className='yellotail'>
-                <LinkContainer to={'/'}>
-                    <Navbar.Brand>NewsWire</Navbar.Brand>
-                </LinkContainer>
-            </Navbar>
-            <Nav className='mb-4'>
-                <Nav.Item>
-                    <LinkContainer to={'/'}>
-                        <Nav.Link>Home</Nav.Link>
-                    </LinkContainer>
-                </Nav.Item>
-                <Nav.Item>
-                    <LinkContainer to={'/news/new'}>
-                        <Nav.Link>NewNews</Nav.Link>
-                    </LinkContainer>
-                </Nav.Item>
-                <Nav.Item>
-                    <LinkContainer to={'/contact'}>
-                        <Nav.Link>Contact</Nav.Link>
-                    </LinkContainer>
-                </Nav.Item>
-            </Nav>
+            <MDBNavbar expand='lg' className='mb-3' light style={{ backgroundColor: '#e3f2fd' }}>
+                <MDBContainer fluid>
+                    <MDBNavbarBrand href={'/'}>NewsWire</MDBNavbarBrand>
+                    <MDBNavbarToggler
+                        type='button'
+                        data-target='#navbarColor02'
+                        aria-controls='navbarColor02'
+                        aria-expanded='false'
+                        aria-label='Toggle navigation'
+                    >
+                        <MDBIcon icon='bars' fas />
+                    </MDBNavbarToggler>
+                    <MDBCollapse navbar>
+                        <MDBNavbarNav className='me-auto mb-2 mb-lg-0'>
+                            <MDBNavbarItem className='active'>
+                                <MDBNavbarLink aria-current='page' href={'/'}>
+                                    Home
+                                </MDBNavbarLink>
+                            </MDBNavbarItem>
+                            <MDBNavbarItem>
+                                <MDBNavbarLink href={'/news/new'}>NewNews</MDBNavbarLink>
+                            </MDBNavbarItem>
+                            <MDBNavbarItem>
+                                <MDBNavbarLink href={'/contact'}>Contact</MDBNavbarLink>
+                            </MDBNavbarItem>
+                        </MDBNavbarNav>
+                    </MDBCollapse>
+                </MDBContainer>
+            </MDBNavbar>
         </>
     )
 }
