@@ -40,7 +40,7 @@ const Contact = () => {
 
     return (
         <>
-            <form onSubmit={(event) => {
+            <form style={{ width: '70%', margin:'auto' }} className="pt-5" onSubmit={(event) => {
                 sendEmail(event);
                 formik.handleSubmit();
             }}>

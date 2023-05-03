@@ -4,6 +4,14 @@ import { getNewsItem } from '../store/actions'
 import Masonry from "react-masonry-css";
 import { Button } from 'react-bootstrap'
 import { LinkContainer } from 'react-router-bootstrap'
+import {
+    MDBCard,
+    MDBCardBody,
+    MDBCardTitle,
+    MDBCardText,
+    MDBCardImage,
+    MDBBtn
+} from 'mdb-react-ui-kit';
 
 const breakpointColumnsObj = {
     default: 4,
@@ -28,19 +36,17 @@ const Home = () => {
                 {newsItem.news ?
                     newsItem.news.map((item) => {
                         return (
-                            <div key={item._id}>
-                                <img style={{ width: '100%', height: '200px' }} src="https://picsum.photos/500" alt="article images" />
-                                <div className="author">
-                                    {item.author}
-                                </div>
-                                <div className="content">
-                                    <div className="title">{item.title}</div>
-                                    <div className="excerpt">{item.body}</div>
+                            <MDBCard>
+                                <MDBCardImage src='https://mdbootstrap.com/img/new/standard/nature/184.webp' position='top' alt='...' />
+                                <MDBCardBody>
+                                    <MDBCardTitle>{item.title}</MDBCardTitle>
+                                    <MDBCardText>{item.body}</MDBCardText>
                                     <LinkContainer to={`/news/${item._id}`}>
-                                        <Button variant="dark" className="mt-3">Read More</Button>
+                                        <MDBBtn href='#'>Read More</MDBBtn>
                                     </LinkContainer>
-                                </div>
-                            </div>
+                                </MDBCardBody>
+                            </MDBCard>
+
                         )
                     })
                     : null}

@@ -43,11 +43,9 @@ Please adhere to this project's `code of conduct`.
 
 # Demo
 
-<!-- https://profile-cards-view.vercel.app -->
-Client : 
+Client : https://newswire-client.onrender.com
 <br><br>
 Server : https://newswire-server.onrender.com
-<!-- https://pankajbaliyan.github.io/Profile-Cards-View/ -->
 
 
 # Feedback
@@ -98,7 +96,8 @@ Start code editor
 
 # Screenshots
 
-![App Screenshot](./preview.webp)
+<!-- ![App Screenshot](./preview.webp) -->
+![App Screenshot](/Client/public/preview.webp)
 
 
 # Support
