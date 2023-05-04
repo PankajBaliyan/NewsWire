@@ -39,7 +39,6 @@ const EditNews = () => {
             showToast('success', 'successfully edited the data to news')
             navigate(`/`)
         } catch (error) {
-            showToast('error')
             // showToast('error', error.message) // frontend Error
             // showToast('error', error.response.data.info) // backend Error
             showToast('error', 'something went wrong, please try again later') // normal Error
