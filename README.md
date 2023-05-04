@@ -96,8 +96,7 @@ Start code editor
 
 # Screenshots
 
-<!-- ![App Screenshot](./preview.webp) -->
-![App Screenshot](/Client/public/preview.webp)
+![App Screenshot](./preview.webp)
 
 
 # Support
