@@ -1,17 +1,17 @@
 import React from 'react'
 import { useFormik } from "formik";
 import * as Yup from "yup";
-import axios from 'axios';
 import Alert from 'react-bootstrap/Alert';
 import { showToast } from "./utils/showToast";
 import { useNavigate } from 'react-router-dom';
+import api from './utils/serverSetup';
 
 const NewNews = () => {
     const navigate = useNavigate()
 
     const addNewsToDB = async (values) => {
         try {
-            await axios.post('/api/news', {
+            await api.post('/api/news', {
                 title: values.title,
                 body: values.body,
                 author: values.author,

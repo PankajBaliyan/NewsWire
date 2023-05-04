@@ -4,8 +4,8 @@ import { useNavigate, useParams } from 'react-router-dom'
 import { getNewsItemById } from '../store/actions'
 import Moment from 'react-moment';
 import { LinkContainer } from 'react-router-bootstrap'
-import axios from 'axios';
 import { showToast } from './utils/showToast';
+import api from '../components/utils/serverSetup'
 
 const ShowNews = () => {
     const newsStore = useSelector((state) => state.news)
@@ -18,7 +18,7 @@ const ShowNews = () => {
 
     const deleteNews = async () => {
         try {
-            await axios.delete(`/api/news/${id}`)
+            await api.delete(`/api/news/${id}`)
             showToast('success', 'successfully deleted the data to news')
             navigate('/')
         } catch (error) {

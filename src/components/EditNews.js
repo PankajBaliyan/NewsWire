@@ -1,13 +1,12 @@
 import React, { useEffect, useState } from 'react'
 import { useFormik } from "formik";
 import * as Yup from "yup";
-import axios from 'axios';
 import Alert from 'react-bootstrap/Alert';
 import { showToast } from "./utils/showToast";
 import { useParams, useNavigate } from 'react-router-dom'
 import { useDispatch } from 'react-redux'
 import { getNewsItemById } from '../store/actions'
-
+import api from './utils/serverSetup';
 
 const EditNews = () => {
     const { id } = useParams();
@@ -31,7 +30,7 @@ const EditNews = () => {
 
     const editNews = async (values) => {
         try {
-            await axios.patch(`/api/news/${id}`, {
+            await api.patch(`/api/news/${id}`, {
                 title: values.title,
                 body: values.body,
                 author: values.author,

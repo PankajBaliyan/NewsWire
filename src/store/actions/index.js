@@ -1,16 +1,4 @@
-import axios from 'axios'
-
-//* Backend server setup start
-// For development
-// const baseURL = 'http://localhost:3001'; // Change this to your Node.js server URL in development mode
-
-// For production
-const baseURL = 'https://newswire-server.onrender.com'; // Change this to your Node.js server URL in production mode
-
-const api = axios.create({
-    baseURL: baseURL
-});
-//! End
+import api from '../../components/utils/serverSetup'
 
 const getNewsItemHelper = async () => {
     try {
