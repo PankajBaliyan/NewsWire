@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 // import { Navbar, Nav } from 'react-bootstrap'
 import { LinkContainer } from 'react-router-bootstrap'
 import {
@@ -14,9 +14,11 @@ import {
 } from 'mdb-react-ui-kit';
 
 const NavBar = () => {
+    const [showNavColor, setShowNavColor] = useState(false);
+
     return (
         <>
-            <MDBNavbar expand='lg' className='mb-3' light style={{ backgroundColor: '#e3f2fd' }}>
+            <MDBNavbar expand='lg' className='mb-3' dark bgColor='dark' style={{ backgroundColor: '#e3f2fd' }}>
                 <MDBContainer fluid>
                     <MDBNavbarBrand href={'/'}>NewsWire</MDBNavbarBrand>
                     <MDBNavbarToggler
@@ -25,10 +27,11 @@ const NavBar = () => {
                         aria-controls='navbarColor02'
                         aria-expanded='false'
                         aria-label='Toggle navigation'
-                    >
+                        onClick={() => setShowNavColor(!showNavColor)}
+                    >+
                         <MDBIcon icon='bars' fas />
                     </MDBNavbarToggler>
-                    <MDBCollapse navbar>
+                    <MDBCollapse show={showNavColor} navbar>
                         <MDBNavbarNav className='me-auto mb-2 mb-lg-0'>
                             <MDBNavbarItem className='active'>
                                 <MDBNavbarLink aria-current='page' href={'/'}>
