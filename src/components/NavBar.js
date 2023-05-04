@@ -1,6 +1,6 @@
 import React from 'react'
 // import { Navbar, Nav } from 'react-bootstrap'
-// import { LinkContainer } from 'react-router-bootstrap'
+import { LinkContainer } from 'react-router-bootstrap'
 import {
     MDBNavbar,
     MDBContainer,
@@ -36,7 +36,9 @@ const NavBar = () => {
                                 </MDBNavbarLink>
                             </MDBNavbarItem>
                             <MDBNavbarItem>
-                                <MDBNavbarLink href={'/news/new'}>NewNews</MDBNavbarLink>
+                                <LinkContainer to={'/news/new'}>
+                                    <MDBNavbarLink href={'#'}>NewNews</MDBNavbarLink>
+                                </LinkContainer>
                             </MDBNavbarItem>
                             <MDBNavbarItem>
                                 <MDBNavbarLink href={'/contact'}>Contact</MDBNavbarLink>
